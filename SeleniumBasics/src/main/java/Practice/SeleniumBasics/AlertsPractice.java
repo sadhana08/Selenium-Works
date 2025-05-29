@@ -4,10 +4,12 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Test;
 
 public class AlertsPractice {
 
-	public static void main(String[] args) throws InterruptedException {
+	@Test
+	public void main() throws InterruptedException {
 		ChromeOptions chromeopt = new ChromeOptions();
 		chromeopt.addArguments("--start-maximized");
 		ChromeDriver driver = new ChromeDriver(chromeopt);

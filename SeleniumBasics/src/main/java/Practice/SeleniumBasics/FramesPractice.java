@@ -4,10 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Test;
 
 public class FramesPractice {
 
-	public static void main(String[] args) throws InterruptedException {
+	@Test
+	public void main() throws InterruptedException {
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--start-maximized");
 		//chromeOptions.addArguments("--headless");
